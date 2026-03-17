@@ -6,7 +6,7 @@
 
 ## Try it now (no signup needed)
 
-Five capabilities work without an API key. Run this in your terminal:
+Several capabilities work without an API key. Run this in your terminal:
 
 ```bash
 curl -s -X POST https://api.strale.io/v1/do \
@@ -24,22 +24,38 @@ You'll get a structured JSON response with validation results, provenance metada
 |---------|-------------|----------|
 | [validate-email.sh](free-tier/validate-email.sh) | Validate any email address — syntax, MX records, disposable detection | Bash/curl |
 | [check-iban.py](free-tier/check-iban.py) | Validate IBAN numbers with country and bank identification | Python |
+| [dns-lookup-free.sh](free-tier/dns-lookup-free.sh) | Look up DNS records for any domain — A, MX, TXT, NS, CNAME | Bash/curl |
 | [repair-json.sh](free-tier/repair-json.sh) | Fix broken JSON from LLM outputs — auto-repair common mistakes | Bash/curl |
 | [url-to-markdown.py](free-tier/url-to-markdown.py) | Convert any webpage to clean markdown for RAG pipelines | Python |
 
-### Multi-step solutions (API key required — €2 free credit on signup)
+### Individual capabilities & multi-step solutions (API key required — €2 free credit on signup)
 
 | Example | What it does | Language |
 |---------|-------------|----------|
+| [analyze-privacy-policy.ts](solutions/analyze-privacy-policy.ts) | Analyze privacy policy — data retention, DPO, user rights, GDPR signals | TypeScript |
 | [audit-gdpr.ts](solutions/audit-gdpr.ts) | Full GDPR compliance audit — cookies, tracking, privacy policy, SSL, DPA | TypeScript |
-| [verify-company-sweden.ts](solutions/verify-company-sweden.ts) | Complete KYC check — company data + VAT + sanctions screening | TypeScript |
-| [enrich-lead.py](solutions/enrich-lead.py) | Lead enrichment pipeline — email validation, DNS, WHOIS, tech stack | Python |
+| [audit-seo.ts](solutions/audit-seo.ts) | SEO audit — title, meta, h1, image alt, Open Graph, schema.org | TypeScript |
+| [check-domain-reputation.sh](solutions/check-domain-reputation.sh) | Domain reputation — spam score, blacklist status, abuse history | Bash/curl |
+| [check-email-deliverability.py](solutions/check-email-deliverability.py) | Email deliverability — SPF, DKIM, DMARC, MX, blacklist status | Python |
+| [check-header-security.sh](solutions/check-header-security.sh) | HTTP security headers audit — CSP, HSTS, X-Frame-Options, and more | Bash/curl |
+| [check-ssl-certificate.sh](solutions/check-ssl-certificate.sh) | SSL certificate check — validity, expiry, issuer, chain completeness | Bash/curl |
 | [check-website-security.sh](solutions/check-website-security.sh) | Website security audit — SSL, headers, DNS, domain reputation, tech stack | Bash/curl |
+| [compare-competitors.ts](solutions/compare-competitors.ts) | Compare two companies — positioning, pricing, audience, trust signals | TypeScript |
+| [detect-tech-stack.py](solutions/detect-tech-stack.py) | Detect website tech stack — framework, CMS, analytics, CDN, hosting | Python |
+| [enrich-lead.py](solutions/enrich-lead.py) | Lead enrichment pipeline — email validation, DNS, WHOIS, tech stack | Python |
+| [extract-pricing-page.py](solutions/extract-pricing-page.py) | Extract structured pricing data from any SaaS pricing page | Python |
+| [lookup-whois.py](solutions/lookup-whois.py) | WHOIS lookup — registrar, creation date, expiry, name servers | Python |
+| [roast-landing-page.ts](solutions/roast-landing-page.ts) | AI conversion analysis — headline, CTA, value prop, trust signals, issues | TypeScript |
+| [screen-sanctions.py](solutions/screen-sanctions.py) | Screen name against UN, EU, OFAC, and global sanctions lists | Python |
+| [test-page-speed.sh](solutions/test-page-speed.sh) | PageSpeed test — Core Web Vitals (LCP, FCP, CLS, TBT), score, opportunities | Bash/curl |
+| [validate-vat-number.py](solutions/validate-vat-number.py) | Validate EU VAT number via VIES — company name and address | Python |
+| [verify-company-sweden.ts](solutions/verify-company-sweden.ts) | Complete KYC check — company data + VAT + sanctions screening | TypeScript |
 
 ### Agent patterns
 
 | Example | What it does | Language |
 |---------|-------------|----------|
+| [batch-processing.py](agent-patterns/batch-processing.py) | Process a list of items in a loop — error handling and rate limiting | Python |
 | [quality-gated-execution.ts](agent-patterns/quality-gated-execution.ts) | Only execute if quality score meets threshold — `min_sqs` pattern | TypeScript |
 
 ## Get an API key
