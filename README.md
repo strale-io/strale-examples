@@ -23,6 +23,7 @@ curl -s -X POST https://api.strale.io/v1/do \
 | [`/python`](./python/) | Python SDK examples — validate, lookup, dry run, error handling |
 | [`/typescript`](./typescript/) | TypeScript SDK examples |
 | [`/langchain`](./langchain/) | LangChain agent integration |
+| [`/crewai`](./crewai/) | CrewAI agent integration |
 | [`/curl`](./curl/) | Raw API examples, no SDK needed |
 
 ## Examples by Use Case
